@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Aether • Loyal AI</title>
+    <link rel="manifest" href="./manifest.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, sans-serif; }
+        .cosmic-bg { background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0f 75%); }
+        .upload-box { border: 3px dashed #6366f1; transition: all 0.3s; }
+        .upload-box:hover { border-color: #a855f7; background: rgba(99, 102, 241, 0.1); }
+        .section-header { font-size: 1.1rem; font-weight: 600; }
+    </style>
+</head>
+<body class="cosmic-bg text-white min-h-screen pb-24">
+    <div class="max-w-2xl mx-auto px-5 py-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-4xl font-bold tracking-tighter">AETHER</h1>
+            <button onclick="toggleSettings()" class="p-4 rounded-2xl hover:bg-white/10">
+                <i class="fas fa-cog text-3xl"></i>
+            </button>
+        </div>
+
+        <!-- Settings -->
+        <div id="settingsPanel" class="hidden bg-zinc-900 rounded-3xl p-6 mb-8 border border-white/10">
+            <h2 class="section-header mb-4">Settings</h2>
+            <input type="password" id="apiKeyInput" class="w-full bg-black border border-zinc-700 rounded-2xl px-5 py-4 mb-4 text-sm" placeholder="sk-...">
+            <button onclick="saveApiKey()" class="w-full bg-indigo-600 py-4 rounded-

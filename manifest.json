@@ -1,0 +1,13 @@
+{
+  "name": "Aether - Loyal AI",
+  "short_name": "Aether",
+  "description": "Uncensored AI - Loyal to Alexander Mohamad",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "icons": [
+    { "src": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
